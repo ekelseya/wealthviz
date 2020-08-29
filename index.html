@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A visual representation of the wealth distribution in America">
+    <meta name="author" content="Eryn Kelsey-Adkins">
+    <title>Wealth Visualization</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>How rich are they?</h1>
+        <p>The wealth gap in the US is hard to imagine. This is my attempt to visualize it.</p>
+    </header>
+    <div>
+        <h2>Let's look at the majority of American incomes</h2>
+        <p>Every square is 10 x 10 pixels and represents approximately $10,000</p>
+        <div class="annual-income">
+            <h3>$12,760 - The poverty line for a single person household.</h3>
+            <div id="poverty-line" class="container-block">
+                <script>appendBlock(1, "poverty-line")</script>
+            </div>
+        </div>
+        <div class="annual-income">
+            <h3>$30,680 - The poverty line for a family of five.</h3>
+            <div id="five-poverty-line" class="container-block">
+                <script>appendBlock(3, "five-poverty-line")</script>
+            </div>
+        </div>
+        <div class="annual-income">
+            <h3>$63,179 - The median household income.</h3>
+            <div id="median" class="container-block">
+                <script>appendBlock(6, "median")</script>
+            </div>
+        </div>
+        <div class="annual-income">
+            <h3>$90,021 - The mean household income.</h3>
+            <div id="mean" class="container-block">
+                <script>appendBlock(9, "mean")</script>
+            </div>
+        </div>
+        <div class="annual-income">
+            <h3>$184,292 - The 90th percentile.</h3>
+            <div id="ninety" class="container-block">
+                <script>appendBlock(18, "ninety")</script>
+            </div>
+        </div>
+        <div class="annual-income">
+            <h3>$248,728 - The 95th percentile.</h3>
+            <div id="ninety-five" class="container-block">
+                <script>appendBlock(25, "ninety-five")</script>
+            </div>
+        </div>
+        <div class="annual-income">
+            <h3>$300,800 - The 99th percentile.</h3>
+            <div id="ninety-nine" class="container-block">
+                <script>appendBlock(30, "ninety-nine")</script>
+            </div>
+        </div>
+
+        <br>
+        <h2>The Bottom of the Forbes 400</h2>
+        <p>Every square is 20 x 20 pixels and represents approximately $100,000</p>
+        <br>
+        <div class="net-worth">
+            <h3>$2,100,000,000 - The net-worth of each of the twelve people tied for last on the Forbes 400 list (2019).</h3>
+            <div id="clark" class="container-square">
+                <script>appendSquare(21000, "clark")</script>
+            </div>
+        </div>
+        <div class="net-worth">
+            <h3>$3,900,000,000 - The net-worth of those tied for 195 on the Forbes 400 list (2019).</h3>
+            <div id="bluhm" class="container-square">
+                <script>appendSquare(39000, "bluhm")</script>
+            </div>
+        </div>
+        <div class="net-worth">
+            <h3>$6,300,000,000 - The net-worth of Dannine Avara, 100 on the Forbes 400 list (2019).</h3>
+            <div id="avara" class="container-square">
+                <script>appendSquare(63000, "avara")</script>
+            </div>
+        </div>
+<!--        <div class="net-worth">-->
+<!--            <h3>$114,000,000,000 - Bill Gates.</h3>-->
+<!--            <div id="gates" class="container">-->
+<!--                <script>appendBlock(11400000, "gates")</script>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="net-worth">-->
+<!--            <h3>$196,000,000,000 - Jeff Bezos.</h3>-->
+<!--            <div id="bezos" class="container">-->
+<!--                <script>appendBlock(19600000, "bezos")</script>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</body>
+</html>

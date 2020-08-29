@@ -1,0 +1,67 @@
+body {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.annual-income {
+    padding: 1rem;
+    text-align: left;
+}
+
+.net-worth {
+    padding: 1rem;
+    text-align: left;
+}
+
+.container-block {
+    display: grid;
+    grid-template-columns: repeat(30, 15px);
+    grid-row-gap: 5px;
+}
+
+.container-square {
+    display: grid;
+    grid-template-columns: repeat(50, 25px);
+    grid-row-gap: 5px;
+}
+
+.container-big-square {
+    display: grid;
+    grid-template-columns: repeat(25, 55px);
+    grid-row-gap: 5px;
+}
+
+.block {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+.big-square {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
